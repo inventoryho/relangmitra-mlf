@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aplikasi Relang HDL & Dealer Mitra - MLF</title>
-  <!-- Tambahkan favicon di sini -->
-  <link rel="icon" href="https://drive.google.com/thumbnail?id=1Bcxi7LoBvRRk-Sti6d2Iij-4nwWvcri6&sz" type="image/x-icon">
-  <!-- Jika menggunakan PNG -->
-  <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
+
+  <!-- Favicon harus direct link ke file gambar -->
+  <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+
   <style>
     body { margin: 0; background: #f7f7f7; }
     iframe {
@@ -16,6 +16,20 @@
       border: none;
     }
   </style>
+
+  <!-- Script untuk marquee title -->
+  <script>
+    let titleText = " ✨ Aplikasi Relang HDL & Dealer Mitra - MLF ✨ ";
+    let position = 0;
+
+    function scrollTitle() {
+      document.title = titleText.substring(position) + titleText.substring(0, position);
+      position = (position + 1) % titleText.length;
+      setTimeout(scrollTitle, 250); // kecepatan scroll
+    }
+
+    window.onload = scrollTitle;
+  </script>
 </head>
 <body>
   <iframe src="https://script.google.com/macros/s/AKfycbwCqtt7uZkIGyRe0auiGU3QgaYCPy_6OYmk_lCnAEatbnyM1-o81Zx59Z-ZHzAz1DSU8g/exec" allowfullscreen></iframe>
