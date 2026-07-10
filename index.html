@@ -1,12 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Aplikasi Rekapitulasi Lelang </title>
+
+  <!-- Favicon harus direct link ke file gambar -->
+  <link rel="icon" href="https://drive.google.com/thumbnail?id=1jGoCivsqGCY0YqK4TrDzP33byfH5wYIt&sz=w100" type="image/x-icon">
+
+  <style>
+    body { margin: 0; background: #f7f7f7; }
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+
+  <!-- Script untuk marquee title -->
+  <script>
+    let titleText = " Aplikasi Bidder Legab ";
+    let position = 0;
+
+    function scrollTitle() {
+      document.title = titleText.substring(position) + titleText.substring(0, position);
+      position = (position + 1) % titleText.length;
+      setTimeout(scrollTitle, 250); // kecepatan scroll
+    }
+
+    window.onload = scrollTitle;
+  </script>
+</head>
 <body>
-<script>
-window.location.replace(
-"https://script.google.com/macros/s/AKfycbzvVSLX263GmWek1tl_Ekag2RuEGDhAwXEuj43HYb_BU58DwV_InohLLt4MVOfTfeqN/exec"
-);
-</script>
-
-<div style="font-family:Arial;text-align:center;margin-top:100px">
-    Membuka aplikasi...
-</div>
-
+  <iframe src="https://www.google.com/"></iframe>
+  <!--iframe src="https://script.google.com/macros/s/AKfycbzvVSLX263GmWek1tl_Ekag2RuEGDhAwXEuj43HYb_BU58DwV_InohLLt4MVOfTfeqN/exec"></iframe-->
 </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
